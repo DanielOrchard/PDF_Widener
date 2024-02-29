@@ -3,8 +3,7 @@ import sys
 import os
 from reportlab.pdfgen import canvas
 
-lines_filename = "lines.pdf"
-lines_img = "lines_v2.png"
+lines_img = os.path.join("assets", "images", "lines_v2.png")
 pdf_xscale = 1.75
 add_lines = True
 

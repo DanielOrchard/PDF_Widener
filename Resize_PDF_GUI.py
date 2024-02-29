@@ -88,7 +88,8 @@ window_height = 500
 root.geometry(f'{window_width}x{window_height}')  # Adjust size as needed
 
 # Load and resize the background image
-bg_image = Image.open("bg.png")
+bg_image_path = os.path.join("assets", "images", "bg.png")
+bg_image = Image.open(bg_image_path)
 bg_photo = ImageTk.PhotoImage(bg_image)
 
 # Create a canvas for the background and the drag-and-drop text
